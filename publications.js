@@ -84,6 +84,15 @@ window.labPublications = [
     year: 2025,
     doi: "10.1038/s41514-025-00257-6"
   },
+  
+{
+  title: "The yin and yang of neuronal mitophagy: Physiological functions and pathological implications in neurodevelopmental disorders",
+  authors: "Ploumi C, Palikaras K.",
+  journal: "Brain, Behavior, and Immunity – Neuroscience",
+  year: 2025,
+  doi: "10.1016/j.bosn.2025.06.001"
+},
+
   {
     title: "Editorial: Targeting the aging mitochondria: mechanisms, methods, and therapeutic strategies",
     authors: "Li Z, Palikaras K, Li Y, Bohr VA.",
@@ -119,6 +128,15 @@ window.labPublications = [
     year: 2024,
     doi: "10.3390/ijms252111520"
   },
+  
+{
+  title: "Urolithins and Their Precursors Ellagic Acid and Ellagitannins: Natural Sources, Extraction and Methods for Their Determination",
+  authors: "Mantzourani C, Kakouri E, Palikaras K, Tarantilis PA, Kokotou MG.",
+  journal: "Separations",
+  year: 2024,
+  doi: "10.3390/separations11060174"
+},
+
   {
     title: "Longevity biotechnology: bridging AI, biomarkers, geroscience and clinical applications for healthy longevity",
     authors: "Lyu YX, Fu Q, Wilczok D, Ying K, King A, Antebi A, Vojta A, Stolzing A, Moskalev A, Georgievskaya A, Maier AB, Olsen A, Groth A, Simon AK, Brunet A, Jamil A, Kulaga A, Bhatti A, Yaden B, Pedersen BK, Schumacher B, Djordjevic B, Kennedy B, Chen C, Huang CY, Correll CU, Murphy CT, Ewald CY, Chen D, Valenzano DR, Sołdacki D, Erritzoe D, Meyer D, Sinclair DA, Chini EN, Teeling EC, Morgen E, Verdin E, Vernet E, Pinilla E, Fang EF, Bischof E, Mercken EM, Finger F, Kuipers F, Pun FW, Gyülveszi G, Civiletto G, Zmudze G, Blander G, Pincus HA, McClure J, Kirkland JL, Peyer J, Justice JN, Vijg J, Gruhn JR, McLaughlin J, Mannick J, Passos J, Baur JA, Betts-LaCroix J, Sedivy JM, Speakman JR, Shlain J, von Maltzahn J, Andreasson KI, Moody K, Palikaras K, Fortney K, Niederhhofer LJ, Rasmussen LJ, Veenhoff LM, Melton L, Ferrucci L, Quarta M, Koval M, Marinova M, Hamalainen M, Unfried M, Ringel MS, Filipovic M, Topors M, Mitin N, Roy N, Pintar N, Barzilai N, Binetti P, Singh P, Kohlhaas P, Robbins PD, Rubin P, Fedichev PO, Kamya P, Muñoz-Canoves P, de Cabo R, Faragher RGA, Konrad R, Ripa R, Mansukhani R, Büttner S, Wickström SA, Brunemeier S, Jakimov S, Luo S, Rosenzweig-Lipson S, Tsai SY, et al.",
