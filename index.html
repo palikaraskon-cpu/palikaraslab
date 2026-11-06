@@ -28,12 +28,12 @@
     if (publications.length === 0) {
       list.textContent = "Publications will be added soon.";
     } else {
-      publications.forEach(function (paper) {
+     publications.forEach(function (paper, index) {
         const item = document.createElement("article");
         item.style.marginBottom = "24px";
 
         const title = document.createElement("h3");
-        title.textContent = paper.title || "";
+        title.textContent = (index + 1) + ". " + (paper.title || "");
         item.appendChild(title);
 
         
