@@ -13,4 +13,50 @@
 <article class="person"><img alt="Portrait of Jiani Huang" loading="lazy" src="images/person-08.jpg"/><div><h3>Jiani Huang</h3><p>Graduate Student</p></div></article>
 <article class="person"><img alt="Portrait of Colby Fair" loading="lazy" src="images/person-09.jpg"/><div><h3>Colby Fair</h3><p>Graduate Student</p></div></article>
 <article class="person"><img alt="Portrait of Stathis Athanasiou" loading="lazy" src="images/person-10.jpg"/><div><h3>Stathis Athanasiou</h3><p>Graduate Student</p></div></article>
-<article class="person"><img alt="Portrait of Haijun He" loading="lazy" src="images/person-11.jpg"/><div><h3>Haijun He</h3><p>Graduate Student</p></div></article></div></div></section><section class="pale" id="publications"><div class="wrap"><span class="kicker">Discoveries</span><h2>Publications</h2><p>Our work spans mitochondrial dynamics, mitophagy, neuronal physiology and ageing. Selected publications from the Palikaras Lab are listed below.</p></div></section><section id="funding"><div class="wrap"><span class="kicker">Research support</span><h2>Funding &amp; partnerships</h2><p>We are grateful for the support that makes our research possible.</p><div class="funding"><span>European Research Council</span><span>Hellenic Foundation for Research &amp; Innovation</span><span>Marie Skłodowska-Curie Actions</span><span>Fondation Santé</span></div><p class="muted" style="font-size:13px">Funding acknowledgments and official logos will be checked before publication.</p></div></section><section class="contact" id="contact"><div class="wrap"><span class="eyebrow">Get in touch</span><h2>Contact the Palikaras Lab</h2><p>Laboratory of Physiology, Medical School<br/>National and Kapodistrian University of Athens<br/>75 Mikras Asias, 11527 Athens, Greece</p></div></section></main><footer>© 2026 Palikaras Lab · National and Kapodistrian University of Athens · Prototype for review</footer></body></html>
+<article class="person"><img alt="Portrait of Haijun He" loading="lazy" src="images/person-11.jpg"/><div><h3>Haijun He</h3><p>Graduate Student</p></div></article></div></div></section><section class="pale" id="publications"><div class="wrap"><span class="kicker">Discoveries</span><h2>Publications</h2><p>Our work spans mitochondrial dynamics, mitophagy, neuronal physiology and ageing. Selected publications from the Palikaras Lab are listed below.</p></div></section><section id="funding"><div class="wrap"><span class="kicker">Research support</span><h2>Funding &amp; partnerships</h2><p>We are grateful for the support that makes our research possible.</p><div class="funding"><span>European Research Council</span><span>Hellenic Foundation for Research &amp; Innovation</span><span>Marie Skłodowska-Curie Actions</span><span>Fondation Santé</span></div><p class="muted" style="font-size:13px">Funding acknowledgments and official logos will be checked before publication.</p></div></section><section class="contact" id="contact"><div class="wrap"><span class="eyebrow">Get in touch</span><h2>Contact the Palikaras Lab</h2><p>Laboratory of Physiology, Medical School<br/>National and Kapodistrian University of Athens<br/>75 Mikras Asias, 11527 Athens, Greece</p></div></section></main><footer>© 2026 Palikaras Lab · National and Kapodistrian University of Athens · Prototype for review</footer>
+<script src="publications.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const section = document.getElementById("publications");
+    if (!section) return;
+
+    const publications = window.labPublications || [];
+    const list = document.createElement("div");
+    list.className = "wrap";
+    list.style.paddingBottom = "48px";
+
+    if (publications.length === 0) {
+      list.textContent = "Publications will be added soon.";
+    } else {
+      publications.forEach(function (paper) {
+        const item = document.createElement("article");
+        item.style.marginBottom = "24px";
+
+        const title = document.createElement("h3");
+        title.textContent = paper.title || "";
+        item.appendChild(title);
+
+        const details = document.createElement("p");
+        details.textContent =
+          (paper.authors || "") + " · " +
+          (paper.journal || "") + " (" +
+          (paper.year || "") + ")";
+        item.appendChild(details);
+
+        if (paper.doi) {
+          const link = document.createElement("a");
+          link.href = "https://doi.org/" + paper.doi;
+          link.textContent = "View publication";
+          link.target = "_blank";
+          link.rel = "noopener noreferrer";
+          item.appendChild(link);
+        }
+
+        list.appendChild(item);
+      });
+    }
+
+    section.appendChild(list);
+  });
+</script>
+</body></html>
