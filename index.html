@@ -36,12 +36,32 @@
         title.textContent = paper.title || "";
         item.appendChild(title);
 
-        const details = document.createElement("p");
-        details.textContent =
-          (paper.authors || "") + " · " +
-          (paper.journal || "") + " (" +
-          (paper.year || "") + ")";
-        item.appendChild(details);
+        
+const details = document.createElement("p");
+
+const authors = paper.authors || "";
+const parts = authors.split(/(Palikaras K\.?)/g);
+
+parts.forEach(function(part) {
+  if (/^Palikaras K\.?$/.test(part)) {
+    const strong = document.createElement("strong");
+    strong.textContent = part;
+    details.appendChild(strong);
+  } else {
+    details.appendChild(document.createTextNode(part));
+  }
+});
+
+const journal = document.createElement("em");
+journal.textContent = " · " + (paper.journal || "");
+
+details.appendChild(journal);
+details.appendChild(
+  document.createTextNode(" (" + (paper.year || "") + ")")
+);
+
+item.appendChild(details);
+
 
         if (paper.doi) {
           const link = document.createElement("a");
