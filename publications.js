@@ -1,6 +1,20 @@
 
 window.labPublications = [
   {
+  title: "BNIP3L/NIX-mediated mitophagy limits Alzheimer's disease pathology and preserves neuronal function",
+  authors: "Li Y, Ploumi C, Volbracht C, Tian W, Kalogeraki N, Kitopoulou K, Navarro CC, Li Z, Cherbuin N, Tavares LC, Ye Z, Norwak AJ, Chintawar S, Cader MZ, Berliocchi L, Goletz S, Bohr VA, Freude K, Palikaras K, Rasmussen LJ.",
+  journal: "bioRxiv (Preprint)",
+  year: 2026,
+  doi: "10.64898/2026.10.18.759942"
+},
+  {
+    title: "A novel multisystem approach uncovers conserved mitochondrial complex I disease phenotypes and suppressors",
+    authors: "Ventura N, Jentsch L, Maglioni S, Jerred C, O'Hara T, Mytilinaiou E, Ruiz J, Schaumkessel Y, Schroeter L, Jung J, Yotov N, Hoffmann J, Kremers K, Rossi A, Reichert A, Watts J, Palikaras K, Haroon S, Prigione A.",
+    journal: "Research Square (Preprint)",
+    year: 2026,
+    doi: "10.21203/rs.3.rs-10539896/v1"
+  },
+  {
     title: "Tau protein as a regulator of mitochondrial function and dynamics",
     authors: "Tsakiri E, Campos-Marques C, Ploumi C, Skourti K, Roussos A, Mytilinaiou E, Vamvaka Iakovou A, Ferreira IL, Dioli C, Gianniou DD, Samiotaki M, Campos J, Waites C, Sousa N, Trougakos IP, Silva JM, Rego AC, Sotiropoulos I, Palikaras K.",
     journal: "Proceedings of the National Academy of Sciences",
@@ -426,8 +440,65 @@ window.labPublications = [
     journal: "Autophagy",
     year: 2015,
     doi: "10.1080/15548627.2015.1061172"
+  },
+  {
+    title: "Mitochondria, autophagy and age-associated neurodegenerative diseases: New insights into a complex interplay",
+    authors: "Lionaki E, Markaki M, Palikaras K, Tavernarakis N.",
+    journal: "Biochimica et Biophysica Acta",
+    year: 2015,
+    doi: "10.1016/j.bbabio.2015.04.010"
+  },
+  {
+    title: "Imaging ectopic fat deposition in Caenorhabditis elegans muscles using nonlinear microscopy",
+    authors: "Mari M, Filippidis G, Palikaras K, Petanidou B, Fotakis C, Tavernarakis N.",
+    journal: "Microscopy Research and Technique",
+    year: 2015,
+    doi: "10.1002/jemt.22504"
+  },
+  {
+    title: "Coordination of mitophagy and mitochondrial biogenesis during ageing in C. elegans",
+    authors: "Palikaras K, Lionaki E, Tavernarakis N.",
+    journal: "Nature",
+    year: 2015,
+    doi: "10.1038/nature14300"
+  },
+  {
+    title: "Mitochondrial homeostasis: the interplay between mitophagy and mitochondrial biogenesis",
+    authors: "Palikaras K, Tavernarakis N.",
+    journal: "Experimental Gerontology",
+    year: 2014,
+    doi: "10.1016/j.exger.2014.01.021"
+  },
+  {
+    title: "Crosstalk between apoptosis, necrosis and autophagy",
+    authors: "Nikoletopoulou V, Markaki M, Palikaras K, Tavernarakis N.",
+    journal: "Biochimica et Biophysica Acta",
+    year: 2013,
+    doi: "10.1016/j.bbamcr.2013.06.001"
+  },
+  {
+    title: "Mitophagy in neurodegeneration and aging",
+    authors: "Palikaras K, Tavernarakis N.",
+    journal: "Frontiers in Genetics",
+    year: 2012,
+    doi: "10.3389/fgene.2012.00297"
+  },
+  {
+    title: "Caloric restriction and resveratrol promote longevity through the Sirtuin-1-dependent induction of autophagy",
+    authors: "Morselli E, Maiuri MC, Markaki M, Megalou E, Pasparaki A, Palikaras K, Criollo A, Galluzzi L, Malik SA, Vitale I, Michaud M, Madeo F, Tavernarakis N, Kroemer G.",
+    journal: "Cell Death & Disease",
+    year: 2010,
+    doi: "10.1038/cddis.2009.8"
+  },
+  {
+    title: "The life span-prolonging effect of sirtuin-1 is mediated by autophagy",
+    authors: "Morselli E, Maiuri MC, Markaki M, Megalou E, Pasparaki A, Palikaras K, Criollo A, Galluzzi L, Malik SA, Vitale I, Michaud M, Madeo F, Tavernarakis N, Kroemer G.",
+    journal: "Autophagy",
+    year: 2010,
+    doi: "10.4161/auto.6.1.10817"
   }
 ];
+
 
 
 
