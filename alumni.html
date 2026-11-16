@@ -17,40 +17,71 @@ body {
   line-height: 1.6;
 }
 
-header {
-  background: white;
+
+/* Unified Palikaras Lab navigation */
+
+.site-header {
+  background: #ffffff;
   border-bottom: 1px solid #e1e8e7;
-  padding: 22px 5%;
+  padding: 16px 5%;
 }
 
-nav {
+.site-nav {
+  max-width: 1400px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.site-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: #172d39;
+  font-size: 22px;
+  font-weight: 700;
+  white-space: nowrap;
+  margin-right: auto;
+}
+
+.site-brand img {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+}
+
+.site-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
   flex-wrap: wrap;
   gap: 22px;
 }
 
-nav a {
-  text-decoration: none;
+.site-links a {
   color: #172d39;
+  text-decoration: none;
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
-nav a:hover, a {
+.site-links a:hover {
   color: #168b80;
 }
 
-.brand {
-  font-size: 22px;
-  margin-right: auto;
-}
+@media (max-width: 900px) {
+  .site-nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-.container {
-  max-width: 1150px;
-  margin: auto;
-  padding: 60px 25px;
-}
+  .site-links {
+    justify-content: flex-start;
+    gap: 14px;
+  }
 
 h1 {
   font-size: 44px;
@@ -145,17 +176,26 @@ h2 {
 
 <body>
 
-<header>
-<nav>
-<a href="#about">About</a>
-  <a href="#research">Research</a>
-  <a href="#microscopy">Microscopy</a>
-  <a href="people.html">People</a>
-  <a href="alumni.html">Alumni</a>
-  <a href="publications.html">Publications</a>
-  <a href="funding.html">Funding</a>
-   <a href="contact.html">Contact</a>
-</nav>
+<header class="site-header">
+  <nav class="site-nav">
+
+    <a class="site-brand" href="index.html">
+      <img src="images/logo.jpg" alt="Palikaras Lab logo">
+      <span>Palikaras Lab</span>
+    </a>
+
+    <div class="site-links">
+      <a href="index.html#about">About</a>
+      <a href="index.html#research">Research</a>
+      <a href="index.html#microscopy">Microscopy</a>
+      <a href="people.html">People</a>
+      <a href="alumni.html">Alumni</a>
+      <a href="publications.html">Publications</a>
+      <a href="funding.html">Funding</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+  </nav>
 </header>
 
 <main class="container">
