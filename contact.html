@@ -1,0 +1,240 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact | Palikaras Lab</title>
+
+<style>
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #172d39;
+  background: #f7faf9;
+  line-height: 1.65;
+}
+
+header {
+  background: white;
+  border-bottom: 1px solid #e1e8e7;
+  padding: 22px 5%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 22px;
+}
+
+nav a {
+  color: #172d39;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+nav a:hover, a { color: #168b80; }
+
+.brand {
+  font-size: 22px;
+  margin-right: auto;
+}
+
+.container {
+  max-width: 1150px;
+  margin: auto;
+  padding: 65px 25px;
+}
+
+h1 { font-size: 44px; margin: 0 0 10px; }
+h2 { font-size: 26px; margin-top: 0; }
+h3 { font-size: 17px; margin-bottom: 8px; }
+
+.intro {
+  color: #60737b;
+  margin-bottom: 35px;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: 26px;
+}
+
+.panel {
+  background: white;
+  border: 1px solid #e1e9e7;
+  border-radius: 9px;
+  padding: 30px;
+}
+
+.detail {
+  margin-bottom: 23px;
+}
+
+.detail p {
+  margin: 4px 0;
+  color: #526974;
+}
+
+.map {
+  width: 100%;
+  height: 370px;
+  border: 0;
+  border-radius: 6px;
+}
+
+.campus {
+  margin-top: 42px;
+}
+
+.campus img {
+  display: block;
+  width: 100%;
+  max-height: 430px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.campus p { color: #60737b; }
+
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #60737b;
+  font-size: 13px;
+}
+
+@media (max-width: 750px) {
+  .contact-grid { grid-template-columns: 1fr; }
+  h1 { font-size: 34px; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+  <a class="brand" href="index.html">Palikaras Lab</a>
+  <a href="index.html">Home</a>
+  <a href="index.html#research">Research</a>
+  <a href="index.html#microscopy">Microscopy</a>
+  <a href="people.html">People</a>
+  <a href="alumni.html">Alumni</a>
+  <a href="publications.html">Publications</a>
+  <a href="funding.html">Funding</a>
+  <a href="contact.html">Contact</a>
+</nav>
+</header>
+
+<main class="container">
+
+<h1>Contact Us</h1>
+<p class="intro">
+Get in touch with the Palikaras Lab at the
+Medical School, National and Kapodistrian
+University of Athens.
+</p>
+
+<div class="contact-grid">
+
+  <section class="panel">
+    <h2>Palikaras Lab</h2>
+
+    <div class="detail">
+      <h3>Address</h3>
+      <p>
+        Laboratory of Physiology "Physiologeion"<br>
+        Medical School<br>
+        National and Kapodistrian University of Athens<br>
+        75 Mikras Asias Street<br>
+        Goudi, 115 27 Athens, Greece
+      </p>
+    </div>
+
+    <div class="detail">
+      <h3>Office Telephone</h3>
+      <p>
+        <a href="tel:+302107462552">
+          +30 210 7462552
+        </a>
+      </p>
+    </div>
+
+    <div class="detail">
+      <h3>Department / Laboratory Secretariat</h3>
+      <p>
+        <a href="tel:+302107462507">
+          +30 210 7462507
+        </a>
+      </p>
+    </div>
+
+    <div class="detail">
+      <h3>Email</h3>
+      <p>
+        <a href="mailto:palikarask@med.uoa.gr">
+          palikarask@med.uoa.gr
+        </a>
+      </p>
+    </div>
+
+    <div class="detail">
+      <h3>Department of Physiology</h3>
+      <p>
+        <a href="https://physiology.med.uoa.gr/en/"
+           target="_blank" rel="noopener noreferrer">
+          Visit the Department website
+        </a>
+      </p>
+    </div>
+
+  </section>
+
+  <section class="panel">
+    <h2>Find Us</h2>
+    <p>
+      NKUA Medical School Campus, Goudi, Athens
+    </p>
+
+    <iframe
+      class="map"
+      title="NKUA Medical School location"
+      src="https://maps.google.com/maps?q=75%20Mikras%20Asias%2C%20Athens%2011527%2C%20Greece&amp;z=16&amp;output=embed"
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+
+    <p>
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=75%20Mikras%20Asias%2C%20Athens%2011527%2C%20Greece"
+         target="_blank" rel="noopener noreferrer">
+        Open location in Google Maps
+      </a>
+    </p>
+  </section>
+
+</div>
+
+<section class="campus">
+  <h2>Our Campus</h2>
+  <img src="images/medical-school-campus.jpg"
+       alt="National and Kapodistrian University of Athens Medical School campus">
+  <p>
+    Medical School, National and Kapodistrian
+    University of Athens, Goudi, Greece.
+  </p>
+</section>
+
+</main>
+
+<footer>
+  © 2026 Palikaras Lab · NKUA Medical School
+</footer>
+
+</body>
+</html>
