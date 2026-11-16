@@ -326,11 +326,13 @@ document.addEventListener("DOMContentLoaded", function () {
     slides[current].classList.add("active");
   }
 
-  function startSlideshow() {
-    clearInterval(timer);
-    timer = setInterval(function () {
-      showSlide(current + 1);
-    }, 5000);
+
+function startSlideshow() {
+  clearInterval(timer);
+  timer = setInterval(function () {
+    showSlide(current + 1);
+  }, 3000);
+
   }
 
   next.addEventListener("click", function () {
